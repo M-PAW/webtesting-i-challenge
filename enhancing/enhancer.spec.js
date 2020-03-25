@@ -80,9 +80,9 @@ describe('enhancer.js', () => {
         describe('.get()', () => {
             it('displays enhanced goodies', () => {
                 
-                expect(get({ enhancement: 10, name: 'hammer'})).toBe('[+10] hammer');
-                // expect(fail({ enhancement: 15, name: 'sword'})).toBe(10);
-                // expect(fail({ enhancement: 20, name: 'mace'})).toBe(19);
+                expect(get({ enhancement: 10, name: 'hammer'}).name).toBe('[+10] hammer');
+                expect(get({ enhancement: 15, name: 'sword'}).name).toBe('[+15] sword');
+                expect(get({ enhancement: 20, name: 'mace'}).name).toBe('[+20] mace');
     
             })})
 
